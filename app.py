@@ -6,7 +6,7 @@ st.header('Datos de anuncios de vehículos en venta')
 build_histogram = st.checkbox('Construir histograma')
 if build_histogram:
     st.write('Creación de un histograma para la columna odómetro')
-    fig = px.histogram(vechicle_data, x="odometer")
+    fig = px.histogram(vehicle_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
 graf_button = st.button('Construir gráfico de dispersión')
 if graf_button:
